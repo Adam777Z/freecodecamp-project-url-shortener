@@ -10,11 +10,11 @@
 
 #### Creation Example:
 
-POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://www.google.com
+POST [project_url]/api/shorturl/new - body (urlencoded): url=https://www.google.com
 
 #### Usage:
 
-[this_project_url]/api/shorturl/5kp4ou09ho2
+https://pollen-nation.glitch.me/api/shorturl/5kp4ou09ho2
 
 #### Will redirect to:
 

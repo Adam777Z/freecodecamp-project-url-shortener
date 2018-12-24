@@ -2,7 +2,7 @@
 	"name": "shorturl",
 	"version": "0.0.1",
 	"description": "API project for freeCodeCamp",
-  "author": "Adam",
+	"author": "Adam",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
