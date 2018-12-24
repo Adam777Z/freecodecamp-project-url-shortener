@@ -19,16 +19,16 @@
 						<ol>
 							<li>I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response.<br>Example : <code>{"original_url":"www.google.com","short_url":1}</code></li>
 							<li>If I pass an invalid URL that doesn't follow the <code>http(s)://www.example.com(/more/routes)</code> format, the JSON response will contain an error like <code>{"error":"invalid URL"}</code><br>
-								HINT: to be sure that the submitted url points to a valid site you can use the function <code>dns.lookup(host, cb)</code> from the <code>dns</code> core module.</li>
+								HINT: to be sure that the submitted URL points to a valid site you can use the function <code>dns.lookup(host, cb)</code> from the <code>dns</code> core module.</li>
 							<li>When I visit the shortened URL, it will redirect me to my original link.</li>
 						</ol>
 
-						<h3>Short URL Creation </h3>
+						<h3>Short URL Creation</h3>
 						<p>Example: <code>POST [project_url]/api/shorturl/new</code> - <code>https://www.google.com</code></p>
-						<form class="form-inline justify-content-center" action="api/shorturl/new" method="POST">
+						<form class="form-inline" action="api/shorturl/new" method="POST">
 							<div class="form-row">
 								<div class="form-group col">
-									<label for="url_input">URL to be shortened:</label> <input id="url_input" class="form-control ml-2 mr-2" type="text" name="url" placeholder="URL to be shortened" value="https://www.freecodecamp.com">
+									<label for="url_input">URL to be shortened:</label> <input id="url_input" class="form-control ml-2 mr-2" type="text" name="url" placeholder="URL to be shortened" value="https://www.freecodecamp.org">
 									<input class="btn btn-primary" type="submit" value="POST URL">
 								</div>
 							</div>
@@ -36,8 +36,8 @@
 
 						<h3>Example Usage:</h3>
 						<ul>
-							<li><a href="/api/shorturl/5kp4ou09ho2">/api/shorturl/5kp4ou09ho2</a> will redirect to https://www.freecodecamp.com</li>
-							<li><a href="/api/shorturl/72abkold6ol">/api/shorturl/72abkold6ol</a> will redirect to https://forum.freecodecamp.com</li>
+							<li><a href="/api/shorturl/jf71vgvg3n">/api/shorturl/jf71vgvg3n</a> will redirect to https://www.freecodecamp.org</li>
+							<li><a href="/api/shorturl/jbx411b0xe">/api/shorturl/jbx411b0xe</a> will redirect to https://www.freecodecamp.org/forum/</li>
 							<li><a href="/api/shorturl/invalid">/api/shorturl/invalid</a></li>
 						</ul>
 
