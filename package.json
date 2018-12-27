@@ -1,0 +1,31 @@
+{
+	"name": "URL Shortener Microservice",
+	"version": "1.0.0",
+	"description": "freeCodeCamp - APIs and Microservices Project: URL Shortener Microservice",
+	"author": "Adam",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express": "^4.16.4",
+		"mongodb": "^3.1.10",
+		"mongoose": "^5.3.15",
+		"cors": "^2.8.5",
+		"body-parser": "^1.18.3"
+	},
+	"engines": {
+		"node": "10.14.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Adam111/freecodecamp-project-url-shortener"
+	},
+	"keywords": [
+		"glitch",
+		"node",
+		"express",
+		"freecodecamp"
+	],
+	"license": "MIT"
+}
