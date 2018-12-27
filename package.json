@@ -1,7 +1,7 @@
 {
-	"name": "shorturl",
-	"version": "0.0.1",
-	"description": "API project for freeCodeCamp",
+	"name": "URL Shortener Microservice",
+	"version": "1.0.0",
+	"description": "freeCodeCamp - APIs and Microservices Project: URL Shortener Microservice",
 	"author": "Adam",
 	"main": "server.js",
 	"scripts": {
@@ -19,11 +19,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://hyperdev.com/#!/project/welcome-project"
+		"url": "https://github.com/Adam111/freecodecamp-project-url-shortener"
 	},
 	"keywords": [
+		"glitch",
 		"node",
-		"hyperdev",
 		"express",
 		"freecodecamp"
 	],
