@@ -1,5 +1,5 @@
 {
-	"name": "URL Shortener Microservice",
+	"name": "freecodecamp-project-url-shortener",
 	"version": "1.0.0",
 	"description": "freeCodeCamp - APIs and Microservices Project: URL Shortener Microservice",
 	"author": "Adam",
@@ -19,7 +19,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Adam111/freecodecamp-project-url-shortener"
+		"url": "https://github.com/Adam111/freecodecamp-project-url-shortener.git"
 	},
 	"keywords": [
 		"glitch",
