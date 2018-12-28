@@ -30,7 +30,7 @@ app.get('/', function(req, res){
   
 // your first API endpoint... 
 app.get("/api/hello", function (req, res) {
-  res.json({greeting: 'hello API'});
+  return res.json({greeting: 'hello API'});
 });
 
 
@@ -72,10 +72,10 @@ app.post('/api/shorturl/new', function (req, res) {
           short_url = data['short_url'];
         }
 
-        res.json({ original_url: original_url, short_url: short_url });
+        return res.json({ original_url: original_url, short_url: short_url });
       });
     } else {
-      res.json({ error: 'invalid URL' });
+      return res.json({ error: 'invalid URL' });
     }
   });
 });
@@ -85,9 +85,9 @@ app.get('/api/shorturl/:shorturl', function (req, res) {
   
   Url.findOne({ short_url: short_url }, function(err, data) {
     if (!err && data !== null) {
-      res.redirect(data['original_url']);
+      return res.redirect(data['original_url']);
     } else {
-      res.json({ error: 'invalid short URL' });
+      return res.json({ error: 'invalid short URL' });
     }
   });
 });
