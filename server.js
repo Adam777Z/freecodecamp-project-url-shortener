@@ -51,7 +51,7 @@ var urlSchema = new Schema({
 
 var Url = mongoose.model('Url', urlSchema);
 
-app.post('/api/shorturl/new', function (req, res) {
+app.post('/api/shorturl', function (req, res) {
   let original_url = req.body.url;
   let short_url = '';
   
