@@ -8,7 +8,7 @@ var cors = require('cors');
 
 var app = express();
 
-// Basic Configuration 
+// Basic Configuration
 var port = process.env.PORT || 3000;
 
 /** this project needs a db!! **/
@@ -27,9 +27,9 @@ app.get('/', function(req, res){
   res.sendFile(process.cwd() + '/views/index.html');
 });
 
-  
-// your first API endpoint... 
-app.get("/api/hello", function (req, res) {
+
+// your first API endpoint...
+app.get('/api/hello', function (req, res) {
   return res.json({greeting: 'hello API'});
 });
 
@@ -54,7 +54,7 @@ var Url = mongoose.model('Url', urlSchema);
 app.post('/api/shorturl', function (req, res) {
   let original_url = req.body.url;
   let short_url = '';
-  
+
   dns.lookup(new URL(!/^(?:f|ht)tps?\:\/\//.test(original_url) ? 'http://' + original_url : original_url).hostname, (err, address, family) => {
     if (address !== undefined) {
       Url.findOne({ original_url: original_url }, function(err, data) {
@@ -82,7 +82,7 @@ app.post('/api/shorturl', function (req, res) {
 
 app.get('/api/shorturl/:shorturl', function (req, res) {
   let short_url = req.params.shorturl;
-  
+
   Url.findOne({ short_url: short_url }, function(err, data) {
     if (!err && data !== null) {
       return res.redirect(data['original_url']);
