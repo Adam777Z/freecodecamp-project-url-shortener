@@ -77,10 +77,6 @@ input[type=text] {
   text-align: center;
 } */
 
-.jumbotron {
-	margin-top: 2rem;
-}
-
 #url_input {
 	width: 17rem;
 }
