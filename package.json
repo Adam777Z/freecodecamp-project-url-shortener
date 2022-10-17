@@ -1,30 +1,30 @@
 {
-  "name": "freecodecamp-project-url-shortener",
-  "description": "freeCodeCamp - APIs and Microservices Project: URL Shortener Microservice",
-  "version": "1.0.0",
-  "author": "Adam",
-  "keywords": [
-    "node",
-    "express",
-    "freecodecamp"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Adam777Z/freecodecamp-project-url-shortener.git"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.1",
-    "mongodb": "^4.8.0",
-    "mongoose": "^6.5.0",
-    "cors": "^2.8.5",
-    "body-parser": "^1.20.0"
-  },
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=16.12.0"
-  }
+	"name": "freecodecamp-project-url-shortener",
+	"description": "freeCodeCamp - APIs and Microservices Project: URL Shortener Microservice",
+	"version": "1.0.0",
+	"author": "Adam",
+	"keywords": [
+		"node",
+		"express",
+		"freecodecamp"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Adam777Z/freecodecamp-project-url-shortener.git"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.18.1",
+		"mongodb": "^4.8.0",
+		"mongoose": "^6.5.0",
+		"cors": "^2.8.5",
+		"body-parser": "^1.20.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"engines": {
+		"node": ">=16.12.0"
+	}
 }
